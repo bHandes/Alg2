@@ -4,12 +4,12 @@ int main(){
 	setlocale(LC_ALL,"Portuguese");
 	int Pessoas;
 	int Leve = 0, Moderado = 0, Pesado = 0, Intensivo = 0;
-	printf ("\nQuantas pessoas ser„o entrevistadas?: ");
+	printf ("\nQuantas pessoas ser√£o entrevistadas?: ");
 	scanf ("%d", &Pessoas);
 	if (Pessoas <=0){
 		do{
 			printf ("\nQuantidade de pessoas deve ser maior que 0!\n");
-			printf ("\nQuantas pessoas ser„o entrevistadas?: ");
+			printf ("\nQuantas pessoas ser√£o entrevistadas?: ");
 			scanf (" %d",&Pessoas);
 		}while (Pessoas <=0);
 	}
@@ -30,10 +30,10 @@ int main(){
 		if (Horas[i]>=4 && Horas[i]<7) Pesado++;
 		if (Horas[i]>6) Intensivo++;
 	}
-	printf ("\nUso Leve (AtÈ 1 hora di·ria): %d",Leve);
-	printf ("\nUso Moderado (1 a 3 horas di·rias): %d",Moderado);
-	printf ("\nUso Pesado (4 a 6 horas di·rias): %d",Pesado);
-	printf ("\nUso Intensivo / Hiperconectado (Mais de 6 horas di·rias): %d",Intensivo);
+	printf ("\nUso Leve (At√© 1 hora di√°ria): %d",Leve);
+	printf ("\nUso Moderado (1 a 3 horas di√°rias): %d",Moderado);
+	printf ("\nUso Pesado (4 a 6 horas di√°rias): %d",Pesado);
+	printf ("\nUso Intensivo / Hiperconectado (Mais de 6 horas di√°rias): %d",Intensivo);
 	
 	if (Leve > Moderado && Leve > Pesado && Leve > Intensivo) printf ("\nO maior tempo de uso foi o Uso leve");
 	if (Moderado > Leve && Moderado > Pesado && Moderado > Intensivo) printf ("\nO maior tempo de uso foi o Uso Moderado");
